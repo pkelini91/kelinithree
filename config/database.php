@@ -87,7 +87,7 @@ return [
             'password' => $heroku_db_url['pass'],
             'charset' => 'utf8',
             'prefix' => '',
-            'schema' => 'public', 
+            'schema' => 'public',
         ],
 
     ],

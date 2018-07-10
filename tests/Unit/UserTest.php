@@ -16,13 +16,36 @@ class UserTest extends TestCase
      */
     public function testExample()
     {
+
         $user = User::find(1);
-        $user->name= 'steve smith';
+        $user->name = 'steve smith';
         $user->save();
-        $this->assertInternalType( 'int',$user->id);
-
-
-
+        $this->assertInternalType('int', $user->id);
 
     }
+
+
+    public function testDelete() {
+        $user = new User();
+        $user->name = 'Etha Carter';
+
+
+        $user->save();
+        $this->assertTrue($user->delete());
+    }
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+

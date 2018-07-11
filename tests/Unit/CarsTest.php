@@ -34,7 +34,7 @@ class CarsTest extends TestCase
     {
         $question = new Car();
         $question->title = 'my question';
-        $question->body = 'my body';
+        $question->body = 'my body!';
         $question->type = 'public';
         $question->save();
         $this->assertTrue($car->delete());

@@ -28,6 +28,7 @@ class UserTest extends TestCase
     public function testDelete() {
         $user = new User();
         $user->name = 'Etha Carter';
+        $user->save();
 
 
         $user->save();
